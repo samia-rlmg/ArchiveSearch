@@ -1,0 +1,276 @@
+<title>Create a New Entry</title>
+<!-- bootstrap & fontawesome css -->
+<link href="http://cdn.jsdelivr.net/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/fontawesome/4.1.0/css/font-awesome.min.css" />
+
+<!-- BootstrapValidator CSS -->
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
+
+<!-- jQuery and Bootstrap JS -->
+<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<!-- BootstrapValidator JS -->
+<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
+
+<!-- Animated Loading Icon -->
+<style type="text/css">
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+</style>
+</head>
+
+<body>
+
+  <!-- <form name="newEntry">
+
+    <input name="email" type="email" placeholder="Email" required>
+    <button type="submit">Send</button>
+   </form>
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwiKQZo4YNnDSHQjmTMuJ_yi6Hqx226JBJozO3OSJBmwbmSMYU/exec'
+    const form = document.forms['newEntry']
+    form.addEventListener('submit', e => {
+     e.preventDefault()
+     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+    })
+   </script> -->
+
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h2>Create a New Entry</h2>
+    </div>
+  </div>
+  <hr>
+  <form class="form-horizontal" role="form" id="new-entry-form" name="newEntry">
+    <div class="form-group">
+      <label class="col-lg-3 control-label">Hard Drive Number</label>
+      <div class="col-lg-3 inputGroupContainer">
+        <div class="input-group">
+          <input type="text" class="form-control" name="Hard Drive Number" placeholder="Hard Drive Number"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-lg-3 control-label">Project</label>
+      <div class="col-lg-3 inputGroupContainer">
+        <div class="input-group">
+          <input type="text" class="form-control" name="Project" placeholder="Project"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-lg-3 control-label">Format</label>
+      <div class="col-lg-3 inputGroupContainer">
+        <div class="input-group">
+          <input type="text" class="form-control" name="Format" placeholder="Format"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-lg-3 control-label">Pixel Size</label>
+      <div class="col-lg-3 inputGroupContainer">
+        <div class="input-group col-lg-10">
+          <input type="text" class="form-control" name="Pixel Size" placeholder="Pixel Size"></input>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-lg-3 control-label">Start Date</label>
+      <div class="col-lg-3 inputGroupContainer">
+        <div class="input-group col-lg-10">
+          <input type="text" class="form-control" name="Start Date" placeholder="Start Date"></input>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-lg-3 control-label">End Date</label>
+      <div class="col-lg-3 inputGroupContainer">
+        <div class="input-group col-lg-10">
+          <input type="text" class="form-control" name="End Date" placeholder="End Date"></input>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-lg-3 control-label">Editing Version</label>
+      <div class="col-lg-3 inputGroupContainer">
+        <div class="input-group col-lg-10">
+          <input type="text" class="form-control" name="Editing Version" placeholder="Editing Version"></input>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-lg-3 control-label">File Folder Name</label>
+      <div class="col-lg-3 inputGroupContainer">
+        <div class="input-group col-lg-10">
+          <input type="text" class="form-control" name="File Folder Name" placeholder="File Folder Name"></input>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-lg-3 control-label">Final File Format</label>
+      <div class="col-lg-3 inputGroupContainer">
+        <div class="input-group col-lg-10">
+          <input type="text" class="form-control" name="Final File Format" placeholder="Final File Format"></input>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-lg-3 control-label">Keywords</label>
+      <div class="col-lg-3 inputGroupContainer">
+        <div class="input-group col-lg-10">
+          <textarea type="text" class="form-control" name="Keywords" placeholder="Keywords"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-lg-3 control-label">Location of Files</label>
+      <div class="col-lg-3 inputGroupContainer">
+        <div class="input-group col-lg-10">
+          <input type="text" class="form-control" name="Location of Files" placeholder="Location of Files"></input>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-lg-3 control-label">LTO Tape</label>
+      <div class="col-lg-3 inputGroupContainer">
+        <div class="input-group col-lg-10">
+          <input type="text" class="form-control" name="LTO Tape" placeholder="LTO Tape"></input>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-lg-3 control-label">Notes</label>
+      <div class="col-lg-3 inputGroupContainer">
+        <div class="input-group col-lg-10">
+          <textarea type="text" class="form-control" name="Notes" placeholder="Notes"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-lg-3 control-label">Original File Format</label>
+      <div class="col-lg-3 inputGroupContainer">
+        <div class="input-group col-lg-10">
+          <input type="text" class="form-control" name="Original File Format" placeholder="Original File Format"></input>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-lg-3 control-label">Producer/Editor</label>
+      <div class="col-lg-3 inputGroupContainer">
+        <div class="input-group col-lg-10">
+          <input type="text" class="form-control" name="Producer/Editor" placeholder="Producer/Editor"></input>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-lg-3 control-label">Raw Footage</label>
+      <div class="col-lg-3 inputGroupContainer">
+        <div class="input-group col-lg-10">
+          <input type="text" class="form-control" name="Raw Footage" placeholder="Raw Footage"></input>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-lg-3 control-label">Description of Raw Footage</label>
+      <div class="col-lg-3 inputGroupContainer">
+        <div class="input-group col-lg-10">
+          <input type="text" class="form-control" name="Description of Raw Footage" placeholder="Description of Raw Footage"></input>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-lg-3 control-label">Preview Link</label>
+      <div class="col-lg-3 inputGroupContainer">
+        <div class="input-group col-lg-10">
+          <input type="text" id="preview" class="form-control" name="Preview Link" placeholder="Preview Link"></input>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-lg-9 col-lg-offset-3">
+        <button type="submit" class="btn btn-default" id="postForm">Submit</button>
+      </div>
+    </div>
+
+  </form>
+
+  </div>
+</body>
+
+<script>
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzYVQZZOE6LUGIM2EkyBJfl7FFZ7Qc0fmqC0EZQpQaH1Qdck5h_/exec'
+const form = document.forms['newEntry']
+
+//Put the user-entered link inside HTML tags
+form.addEventListener('submit', e => {
+  var txt = document.getElementById('preview');
+  //Check if it begins with "http://"; append it if not
+  if ((txt.value.indexOf("http") == -1) && (txt.value)) {
+    txt.value = "http://" + txt.value;
+  }
+  //Replace link with HTML tags
+  if (txt.value) {
+    txt.value = `<a onclick="window.open('` + txt.value.trim() + `', 'popup', 'width=700,height=500'); return false;">Preview</a>`;
+  }
+})
+
+ //Post submitted data to Google sheet
+ form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+   .then(response => console.log('Success!', response))
+   .catch(error => console.error('Error!', error.message))
+   redirect();
+ })
+
+ //Redirect to "success" page
+ function redirect() {
+  const redirectUrl = 'success-page.html';
+  // $("form").on("submit", function() {
+    setTimeout("location.href = 'success-page.html';",100);
+  //   $(location).attr('href',redirectUrl);
+  // })
+}
+
+</script>
+
+<footer>
+<!-- <script src="validation-functions.js"></script> -->
+</footer>
+
+</html>
