@@ -38,19 +38,10 @@
     <body>
       <h1>RLMG File Finder</h1>
         <fieldset>
-          <legend>Enter your search terms:</legend>
+          <legend>Enter your search terms, separated by commas:</legend>
           <table>
             <tr>
-              <td><label>Drive Number:</label><br></td>
-              <td><label>Project:</label><br></td>
-              <td><label>Keywords <br>(separate with commas):</label><br></td>
-              <td><label>Producer/Editor:</label><br></td>
-            </tr>
-            <tr>
-              <td><input type="text" size=30 name='driveNo' id='driveNo' value="" /></td>
-              <td><input type="text" size=30 name='project' id='project' value="" /></td>
-              <td><input type="text" size=30 name='keywords' id='keywords' value="" /></td>
-              <td><input type="text" size=30 name='producer-editor' id='producer-editor' value="" /></td>
+              <td><input type="text" size=60 name='search-terms' id='search-terms' value="" placeholder="Ex: hard drive number, project name, producer, keywords, etc." /></td>
             </tr>
             <tr><td><br></td></tr>
             <tr>
@@ -63,8 +54,8 @@
               <td><input type="radio" size=30 name='logic' id='andLogic' value="AND" /> All of the above terms</td>
             </tr>
           </table><br>
-          <input id="btn" type="button" value="Submit" class="btn btn-default" onclick="defineSearch()" />
-          <button type="button" class="btn btn-default"><a href="submitToForm/newEntry.html" target="_blank">Create New Entry</a></button>
+          <input id="btn" type="submit" value="Submit" class="btn btn-default" onclick="defineSearch()" />
+          <button id="new-entry" type="button" class="btn btn-default"><a href="submitToForm/newEntry.html" target="_blank">Create New Entry</a></button>
           <button type="button" class="btn btn-default"><a href="https://docs.google.com/spreadsheets/d/1LST9-FQj7HKwGB3TyyaUay4fMpS7-B4_0fafC_EOGlY/edit#gid=1993098573" target="_blank">Edit an Existing Entry</a></button>
         </fieldset>
 
