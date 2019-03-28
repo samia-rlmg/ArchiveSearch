@@ -1,24 +1,5 @@
 <title>Create a New Entry</title>
 
-<!-- Animated Loading Icon -->
-<style type="text/css">
-.glyphicon-refresh-animate {
-    -animation: spin .7s infinite linear;
-    -webkit-animation: spin2 .7s infinite linear;
-}
-
-@-webkit-keyframes spin2 {
-    from { -webkit-transform: rotate(0deg);}
-    to { -webkit-transform: rotate(360deg);}
-}
-
-@keyframes spin {
-    from { transform: scale(1) rotate(0deg);}
-    to { transform: scale(1) rotate(360deg);}
-}
-</style>
-</head>
-
 <body>
 
   <!-- <form name="newEntry">
@@ -46,91 +27,91 @@
   <hr>
   <form class="form-horizontal" role="form" id="new-entry-form" name="newEntry">
     <div class="form-group">
-      <label class="col-lg-3 control-label">Hard Drive Number</label>
+      <label class="col-lg-3 control-label">Project Name</label>
       <div class="col-lg-3 inputGroupContainer">
         <div class="input-group">
-          <input type="text" class="form-control" name="Hard Drive Number" placeholder="Hard Drive Number"/>
+          <input type="text" class="form-control" name="Project Name" placeholder="Project name"/>
         </div>
       </div>
     </div>
 
     <div class="form-group">
-      <label class="col-lg-3 control-label">Project</label>
+      <label class="col-lg-3 control-label">Drive Number</label>
       <div class="col-lg-3 inputGroupContainer">
         <div class="input-group">
-          <input type="text" class="form-control" name="Project" placeholder="Project"/>
+          <input type="text" class="form-control" name="Drive Number" placeholder="Drive number"/>
         </div>
       </div>
     </div>
 
     <div class="form-group">
-      <label class="col-lg-3 control-label">Format</label>
+      <label class="col-lg-3 control-label">Project Start Date</label>
       <div class="col-lg-3 inputGroupContainer">
         <div class="input-group">
-          <input type="text" class="form-control" name="Format" placeholder="Format"/>
+          <input type="text" class="form-control" name="Project Start Date" placeholder="Project start date"/>
         </div>
       </div>
     </div>
 
     <div class="form-group">
-      <label class="col-lg-3 control-label">Pixel Size</label>
+      <label class="col-lg-3 control-label">Project End Date</label>
       <div class="col-lg-3 inputGroupContainer">
         <div class="input-group col-lg-10">
-          <input type="text" class="form-control" name="Pixel Size" placeholder="Pixel Size"></input>
+          <input type="text" class="form-control" name="Project End Date" placeholder="Project end date"></input>
         </div>
       </div>
     </div>
 
     <div class="form-group">
-      <label class="col-lg-3 control-label">Start Date</label>
+      <label class="col-lg-3 control-label">Vimeo Album Link</label>
       <div class="col-lg-3 inputGroupContainer">
         <div class="input-group col-lg-10">
-          <input type="text" class="form-control" name="Start Date" placeholder="Start Date"></input>
+          <input type="text" class="form-control" name="Vimeo Album Link" placeholder="Vimeo album link"></input>
         </div>
       </div>
     </div>
 
     <div class="form-group">
-      <label class="col-lg-3 control-label">End Date</label>
+      <label class="col-lg-3 control-label">Drive Contents</label>
       <div class="col-lg-3 inputGroupContainer">
         <div class="input-group col-lg-10">
-          <input type="text" class="form-control" name="End Date" placeholder="End Date"></input>
+          <input type="text" class="form-control" name="Drive Contents" placeholder="Drive contents"></input>
         </div>
       </div>
     </div>
 
     <div class="form-group">
-      <label class="col-lg-3 control-label">Editing Version</label>
+      <label class="col-lg-3 control-label">Project Specs</label>
       <div class="col-lg-3 inputGroupContainer">
         <div class="input-group col-lg-10">
-          <input type="text" class="form-control" name="Editing Version" placeholder="Editing Version"></input>
+          <input type="text" class="form-control" name="Project Specs" placeholder="Project specs"></input>
         </div>
       </div>
     </div>
 
     <div class="form-group">
-      <label class="col-lg-3 control-label">File Folder Name</label>
+      <label class="col-lg-3 control-label">Project Managers/Producers</label>
       <div class="col-lg-3 inputGroupContainer">
         <div class="input-group col-lg-10">
-          <input type="text" class="form-control" name="File Folder Name" placeholder="File Folder Name"></input>
+          <input type="text" class="form-control" name="Project Managers/Producers" placeholder="Project managers/producers"></input>
         </div>
       </div>
     </div>
 
     <div class="form-group">
-      <label class="col-lg-3 control-label">Final File Format</label>
+      <label class="col-lg-3 control-label">Featured Exhibits</label>
       <div class="col-lg-3 inputGroupContainer">
         <div class="input-group col-lg-10">
-          <input type="text" class="form-control" name="Final File Format" placeholder="Final File Format"></input>
+          <input type="text" class="form-control" name="Featured Exhibits" placeholder="Featured exhibits"></input>
         </div>
       </div>
     </div>
 
     <div class="form-group">
-      <label class="col-lg-3 control-label">Keywords</label>
+      <label class="col-lg-3 control-label">LTO Number</label>
       <div class="col-lg-3 inputGroupContainer">
         <div class="input-group col-lg-10">
-          <textarea type="text" class="form-control" name="Keywords" placeholder="Keywords"></textarea>
+          <textarea type="text" class="form-control" name="LTO Number" placeholder="LTO number"></textarea>
         </div>
       </div>
     </div>
@@ -145,64 +126,10 @@
     </div>
 
     <div class="form-group">
-      <label class="col-lg-3 control-label">LTO Tape</label>
+      <label class="col-lg-3 control-label">Keywords</label>
       <div class="col-lg-3 inputGroupContainer">
         <div class="input-group col-lg-10">
-          <input type="text" class="form-control" name="LTO Tape" placeholder="LTO Tape"></input>
-        </div>
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="col-lg-3 control-label">Notes</label>
-      <div class="col-lg-3 inputGroupContainer">
-        <div class="input-group col-lg-10">
-          <textarea type="text" class="form-control" name="Notes" placeholder="Notes"></textarea>
-        </div>
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="col-lg-3 control-label">Original File Format</label>
-      <div class="col-lg-3 inputGroupContainer">
-        <div class="input-group col-lg-10">
-          <input type="text" class="form-control" name="Original File Format" placeholder="Original File Format"></input>
-        </div>
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="col-lg-3 control-label">Producer/Editor</label>
-      <div class="col-lg-3 inputGroupContainer">
-        <div class="input-group col-lg-10">
-          <input type="text" class="form-control" name="Producer/Editor" placeholder="Producer/Editor"></input>
-        </div>
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="col-lg-3 control-label">Raw Footage</label>
-      <div class="col-lg-3 inputGroupContainer">
-        <div class="input-group col-lg-10">
-          <input type="text" class="form-control" name="Raw Footage" placeholder="Raw Footage"></input>
-        </div>
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="col-lg-3 control-label">Description of Raw Footage</label>
-      <div class="col-lg-3 inputGroupContainer">
-        <div class="input-group col-lg-10">
-          <input type="text" class="form-control" name="Description of Raw Footage" placeholder="Description of Raw Footage"></input>
-        </div>
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="col-lg-3 control-label">Preview Link</label>
-      <div class="col-lg-3 inputGroupContainer">
-        <div class="input-group col-lg-10">
-          <input type="text" id="preview" class="form-control" name="Preview Link" placeholder="Preview Link"></input>
+          <input type="text" class="form-control" name="Keywords" placeholder="Keywords"></input>
         </div>
       </div>
     </div>
@@ -220,7 +147,7 @@
 
 <script>
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzYVQZZOE6LUGIM2EkyBJfl7FFZ7Qc0fmqC0EZQpQaH1Qdck5h_/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzYVQZZOE6LUGIM2EkyBJfl7FFZ7Qc0fmqC0EZQpQaH1Qdck5h_/exec';
 const form = document.forms['newEntry']
 
 //Put the user-entered link inside HTML tags
